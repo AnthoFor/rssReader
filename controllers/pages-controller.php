@@ -1,7 +1,16 @@
 <?php
-    $rssfeed = file_get_contents("https://rmcsport.bfmtv.com/rss/fil-sport/");  
-    $sportNews = new SimpleXMLElement($rssfeed);
-    var_dump($sportNews);
+    //Sport global
+    $rssFeedGlobal = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/fil-sport/"));
+    //RSS Basket
+    $rssFeedBasket = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/basket/"));
+    //RSS football
+    $rssFeedFoot = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/football/"));
+    //RSS Rugby
+    $rssFeedRugby = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/rugby/"));
+    //RSS tennis
+    $rssFeedTennis = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/tennis/"));
+    
+    var_dump($rssFeedTennis);
     die;
     foreach ($sportNews->channel->item as $value) {
         echo "<h1>$value->title</h1>";
