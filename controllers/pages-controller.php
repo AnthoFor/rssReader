@@ -33,6 +33,9 @@
         array_push($arrayTennis, [$value->pubDate, $value->title, $value->description, $value->link]);
     }
 
+
+    //exploitation des diffférents tableaux
+    //tableau global
     echo '<p>'.$arrayGlobal[0][0].'</p>';
     echo '<p>'.$arrayGlobal[0][1].'</p>';
     echo '<p>'.$arrayGlobal[0][2].'</p>';
@@ -42,6 +45,7 @@
     echo '<p>'.$arrayGlobal[1][2].'</p>';
     echo '<p>'.$arrayGlobal[1][3].'</p>';
 
+    //tableau basket
     echo '<p>'.$arrayBasket[0][0].'</p>';
     echo '<p>'.$arrayBasket[0][1].'</p>';
     echo '<p>'.$arrayBasket[0][2].'</p>';
@@ -51,6 +55,7 @@
     echo '<p>'.$arrayBasket[1][2].'</p>';
     echo '<p>'.$arrayBasket[1][3].'</p>';
 
+    //tableau foot
     echo '<p>'.$arrayFoot[0][0].'</p>';
     echo '<p>'.$arrayFoot[0][1].'</p>';
     echo '<p>'.$arrayFoot[0][2].'</p>';
@@ -60,6 +65,7 @@
     echo '<p>'.$arrayFoot[1][2].'</p>';
     echo '<p>'.$arrayFoot[1][3].'</p>';
     
+    //tableau rugby
     echo '<p>'.$arrayRugby[0][0].'</p>';
     echo '<p>'.$arrayRugby[0][1].'</p>';
     echo '<p>'.$arrayRugby[0][2].'</p>';
@@ -69,6 +75,7 @@
     echo '<p>'.$arrayRugby[1][2].'</p>';
     echo '<p>'.$arrayRugby[1][3].'</p>';
 
+    //tableau tennis
     echo '<p>'.$arrayTennis[0][0].'</p>';
     echo '<p>'.$arrayTennis[0][1].'</p>';
     echo '<p>'.$arrayTennis[0][2].'</p>';
