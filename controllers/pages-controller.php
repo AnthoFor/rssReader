@@ -10,9 +10,9 @@
     //RSS tennis
     $rssFeedTennis = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/tennis/"));
     
-    var_dump($rssFeedTennis);
-    die;
-    foreach ($sportNews->channel->item as $value) {
+    // var_dump($rssFeedTennis);
+    // die;
+    foreach ($rssFeedGlobal->channel->item as $value) {
         echo "<h1>$value->title</h1>";
         echo "<p>$value->description</p>";
     }
