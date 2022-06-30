@@ -7,4 +7,8 @@
         echo "<h1>$value->title</h1>";
         echo "<p>$value->description</p>";
     }
+
+    include(__DIR__.'/../views/header.php');
+    include(__DIR__.'/../views/pages.php');
+    include(__DIR__.'/../views/footer.php');
 ?>
