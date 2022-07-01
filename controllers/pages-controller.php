@@ -17,6 +17,7 @@
     $arrayFoot = array();
     $arrayRugby = array();
     $arrayTennis = array();
+    
     //agrégation de toute les autres arrays dans un mega array
     $megaArray = array();
 
