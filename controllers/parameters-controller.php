@@ -1,5 +1,31 @@
 <!-- Récupération des préférences users -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Gestion des cookiess -->
 <?php
 
