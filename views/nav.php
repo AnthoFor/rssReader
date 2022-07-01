@@ -16,11 +16,11 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item dropdown ">
                             <ul  aria-labelledby="navbarDropdown ">
-                                <li><a class="dropdown-item text-light" href="#">Actualités generales </a></li>
-                                <li><a class="dropdown-item text-light" href="#">Football</a></li>
-                                <li><a class="dropdown-item text-light" href="#">Tennis</a></li>
-                                <li><a class="dropdown-item text-light" href="#">Rugby</a></li>
-                                <li><a class="dropdown-item text-light" href="#">Basket</a></li>
+                                <li><a class="dropdown-item text-light" href="../controllers/pages-controller.php?cat=global">Actualités générales</a></li>
+                                <li><a class="dropdown-item text-light" href="../controllers/pages-controller.php?cat=foot">Football</a></li>
+                                <li><a class="dropdown-item text-light" href="../controllers/pages-controller.php?cat=tennis">Tennis</a></li>
+                                <li><a class="dropdown-item text-light" href="../controllers/pages-controller.php?cat=rugby">Rugby</a></li>
+                                <li><a class="dropdown-item text-light" href="../controllers/pages-controller.php?cat=basket">Basket</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -44,11 +44,11 @@
 
         </div>
         <div class="text-light d-flex justify-content-around w-100 mt-3">
-            <p>| Actualités générales  <img src="../public/assets/img/newspaper-svgrepo-com.svg" alt="logo journal illustrant les news général" class="iconSports ms-3"> |</p>
-            <p>| Football  <img src="../public/assets/img/football-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"> |</p>
-            <p>| Tennis  <img src="../public/assets/img/big-tennis-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"> |</p>
-            <p>| Rugby  <img src="../public/assets/img/rugby-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"> |</p>
-            <p>| Basket  <img src="../public/assets/img/basketball-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"> |</p>
+            <p><a class="text-decoration-none text-light" href="../controllers/pages-controller.php?cat=global">Actualités générales <img src="../public/assets/img/newspaper-svgrepo-com.svg" alt="logo journal illustrant les news général" class="iconSports ms-3"></a></p>
+            <p><a class="text-decoration-none text-light" href="../controllers/pages-controller.php?cat=foot">Football <img src="../public/assets/img/football-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
+            <p><a class="text-decoration-none text-light" href="../controllers/pages-controller.php?cat=tennis">Tennis <img src="../public/assets/img/big-tennis-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
+            <p><a class="text-decoration-none text-light" href="../controllers/pages-controller.php?cat=rugby">Rugby <img src="../public/assets/img/rugby-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
+            <p><a class="text-decoration-none text-light" href="../controllers/pages-controller.php?cat=basket">Basket <img src="../public/assets/img/basketball-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
         </div>
     </nav>
 </div>
