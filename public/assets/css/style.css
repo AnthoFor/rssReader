@@ -1,7 +1,51 @@
 .logo{
-    height: 100px !important;
-    width: 100px !important;
+    height: 100px ;
+    width: 100px ;
+}
+.gear{
+    font-size: 1.6rem;
+
 }
 .title{
     font-family: 'SPORT NEWS', sans-serif;
+    padding-right: 30px;
 }
+.iconNav{
+    font-size: 0.8rem;
+}
+.buttonNav{
+    font-size: 1rem;
+}
+.slogan{
+    padding-right: 30px;
+}
+.categories{
+    color: white;
+}
+
+.iconSports{
+    height: 30px;
+    width: 30px;
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width:576px) {
+    .navBarSm{
+        display: none;
+    }
+    .gear{
+        font-size: 2.6rem;
+    }
+    .logo{
+        height: 150px ;
+        width: 150px ;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .navBarLg{
+        display: none;
+    }
+}
+
