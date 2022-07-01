@@ -29,7 +29,3 @@
         <?php include(__DIR__ . '/../views/nav.php'); ?>
     </header>
 
-    <main>
-
-
-    </main>

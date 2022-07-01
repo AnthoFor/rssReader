@@ -36,7 +36,9 @@
         array_push($arrayTennis, [$value->pubDate, $value->title, $value->description, $value->link]);
     }
     array_push($megaArray, $arrayBasket, $arrayFoot, $arrayRugby, $arrayTennis, $arrayGlobal);
+
     $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
+    
     foreach ($defautArray as $value) {
         echo '<p>'.$value[0].'</p>';
         echo '<p>'.$value[1].'</p>';
@@ -62,6 +64,9 @@
     // }
 
     include(__DIR__.'/../views/header.php');
+    include(__DIR__.'/../views/home.php');
     include(__DIR__.'/../views/pages.php');
+
     include(__DIR__.'/../views/footer.php');
+    
 ?>
