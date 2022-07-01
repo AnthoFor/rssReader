@@ -1,3 +1,9 @@
+/* GENERAL FONT  */
+body {
+    font-family: 'Spinnaker', sans-serif;                                            
+}
+
+/* HEADER */
 .logo{
     height: 100px !important;
     width: 100px !important;
@@ -5,3 +11,4 @@
 .title{
     font-family: 'SPORT NEWS', sans-serif;
 }
+/* header */
