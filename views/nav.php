@@ -2,8 +2,8 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light text-center bg-dark navBarSm">
         <div class="container-fluid justify-content-around ">
-                <a  href="parameters.php" class="bi bi-gear gear  text-light justify-content-start img-fluid" ></a>
-                <img src="../public/assets/img/lEQUIPE_22Logo.png" class="logo"  alt="logo de l'équipe 22 avec style, une chaussure multicolor">
+                <a  href="../views/parameters.php" class="bi bi-gear gear  text-light justify-content-start img-fluid" ></a>
+                <a href="../controllers/pages-controller.php"><img src="../public/assets/img/lEQUIPE_22Logo.png" class="logo"  alt="logo de l'équipe 22 avec style, une chaussure multicolor"></a>
                 <div>
                 <h1 class="title text-light ">L'EQUIPE 22 </h1>
                 <h3 class="text-light slogan">L'info Sport</h3>
@@ -34,12 +34,12 @@
 <div>
     <nav class="navbar  navbar-light bg-light text-center bg-dark navBarLg">
         <div class="container-fluid justify-content-around  w-100">
-            <a  href="parameters.php" class="bi bi-gear gear text-light justify-content-start " ></a>
+            <a  href="../views/parameters.php" class="bi bi-gear gear text-light justify-content-start " ></a>
         <div>
             <h1 class="title text-light ">L'EQUIPE 22 </h1>
             <h3 class="text-light slogan">L'info Sport</h3>
         </div>
-        <img src="../public/assets/img/lEQUIPE_22Logo.png" class="logo"  alt="logo de l'équipe 22 avec style, une chaussure multicolor">
+        <a href="../controllers/pages-controller.php"><img src="../public/assets/img/lEQUIPE_22Logo.png" class="logo"  alt="logo de l'équipe 22 avec style, une chaussure multicolor"></a>
 
 
         </div>
