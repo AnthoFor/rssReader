@@ -1,3 +1,9 @@
+/* GENERAL FONT  */
+body {
+    font-family: 'Spinnaker', sans-serif;                                            
+}
+
+/* HEADER */
 .logo{
     height: 100px ;
     width: 100px ;
@@ -99,3 +105,5 @@ body > div > div > form > div:nth-child(2) > div {
 body > div > div > form {
     background-color: #D9D9D9;
 }
+}
+/* header */
