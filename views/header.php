@@ -17,7 +17,10 @@
     <!-- Meta description -->
     <meta name="description" content="Site d'actualité rattaché à RMC Sport, nous traitons ici de l'actualité du sport et des acteurs qui les representent ! ">
     <!-- police d'ecriture -->
-    <link href="http://fonts.cdnfonts.com/css/sport-news" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sport-news" rel="stylesheet">
+    <!-- police d'écriture général du site  -->
+    <link href="https://fonts.cdnfonts.com/css/spinnaker" rel="stylesheet">
+                
                 
 
 </head>
