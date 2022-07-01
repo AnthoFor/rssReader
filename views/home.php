@@ -1,6 +1,7 @@
 <?php
+//Création du tableau RSS par défaut
 $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
-
+//affichage ( à modifier en fonction du modele des cards)
 foreach ($defautArray as $value) {
     echo '<p>'.$value[0].'</p>';
     echo '<p>'.$value[1].'</p>';
