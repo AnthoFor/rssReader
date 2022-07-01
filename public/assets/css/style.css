@@ -3,7 +3,16 @@ body {
 }
 
 /* form  */
-body > div > div.container {
+
+body > div > div > form > div:nth-child(2) > div {
+    justify-content: center;
+}
+
+.form-check-input:checked {
+    background-color: black!important;
+    border-color: black!important;
+}
+
+body > div > div > form {
     background-color: #D9D9D9;
-    width: 30%
 }
