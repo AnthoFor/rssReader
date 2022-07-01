@@ -8,6 +8,12 @@
 </head>
 <body>
     
-    <img src="../public/assets/img/stadium-gf274e967f_1920.jpg" alt="Photo de stade prise par @marco_pomella.">
+    <div class="image404 vh-100 d-flex justify-content-center align-items-center">        
+            <div class="text-center text404 ">
+                <p>ERROR 404.</p>
+                <p class="sloganText404"> 🎾🏉Pour nous aussi des fois c'est la mi-temps ⚽ 🏀</p>
+            </div>        
+    </div>
+        
 </body>
 </html>

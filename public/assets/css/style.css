@@ -29,6 +29,25 @@
     filter: brightness(0) invert(1);
 }
 
+.image404{
+    background-image: url(../img/stadium-gf274e967f_1920.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text404{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 50px;
+}
+.sloganText404{
+    font-size: 10px;
+}
+
 @media screen and (min-width:576px) {
     .navBarSm{
         display: none;
@@ -40,6 +59,19 @@
         height: 150px ;
         width: 150px ;
     }
+    .text404{
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 8px );
+        -webkit-backdrop-filter: blur( 8px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        font-size: 150px;
+    }
+    .sloganText404{
+        font-size: 30px;
+    }
+
 
 }
 
