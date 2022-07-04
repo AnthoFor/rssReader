@@ -5,7 +5,6 @@ if (empty($_GET)) {
     foreach ($defautArray as $value) {
     ?>
     
-
                 <div class="card mx-auto my-3 bg-white cardSizes">
                 <div class="card-body">
                     <!-- Image -->
