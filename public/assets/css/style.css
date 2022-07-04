@@ -118,3 +118,6 @@ body > div > div > form {
 .removeImg img {
     display: none;
 }
+.cardSizes{
+    width: 25rem;
+}

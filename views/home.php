@@ -6,7 +6,7 @@ if (empty($_GET)) {
     ?>
     
             <div class="col-lg-3">
-                <div class="card mx-auto my-3 bg-white" style="width: 20rem;">
+                <div class="card mx-auto my-3 bg-white cardSizes">
                 <div class="card-body">
                     <!-- Image -->
                     <p class="card-text removeTxt"><?=$value[2]?></p>
