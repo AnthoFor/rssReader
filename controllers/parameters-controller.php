@@ -37,37 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         setcookie('newsDisplay', $newsDisplay, time() + (60*60*24*30));
     }
     header("Refresh: 0 url=pages-controller.php");
-
-
-
-
-//     // un peu de UX pour les radios
-//     function newsDisplay() {
-//         if (isset($_POST['newsDisplay'])) {
-//             $displayNews = $_POST['newsDisplay'];
-//             if ($displayNews == 6) {
-//                 return '6';
-//             } elseif ($displayNews == 9) {
-//                 return '9';
-//             } elseif ($displayNews == 12) {
-//                 return '12';
-//             }
-//         } else {
-//             return '';
-//         }
-// }
-
-//     // fonction pour la prise en compte des paramètres de l'utilisateur
-//     function saveSettings() {
-//         if (isset($_POST['submit']) && empty($errorMsg)) {
-//             return 'Paramètres enregistrés';
-//         }
-//     }
-
-    // header("Refresh:0");
 }
-
-
 include(__DIR__ . '/../views/header.php');
 include(__DIR__ . '/../views/parameters.php');
 include(__DIR__ . '/../views/footer.php');
