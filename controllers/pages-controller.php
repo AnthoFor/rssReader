@@ -42,10 +42,12 @@
 
     include(__DIR__.'/../views/header.php');
     ?>
-    <div class="container-fluid d-flex">        
+    <div class="container-fluid">
+    <div class="row">        
         <?php
             include(__DIR__.'/../views/home.php');
         ?>
+    </div>
     </div>
     <?php
     // include(__DIR__.'/../views/pages.php');

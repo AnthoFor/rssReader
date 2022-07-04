@@ -4,8 +4,8 @@ if (empty($_GET)) {
     $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
     foreach ($defautArray as $value) {
     ?>
-    <div class="row">
-            <div class="col-lg-4">
+    
+            <div class="col-lg-3">
                 <div class="card mx-auto my-3 bg-white" style="width: 20rem;">
                 <div class="card-body">
                     <!-- Image -->
@@ -25,7 +25,6 @@ if (empty($_GET)) {
                 </div>
             </div>
         </div>
-    </div>
 <?php
     }
 }
