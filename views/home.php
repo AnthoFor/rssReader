@@ -5,7 +5,7 @@ if (empty($_GET)) {
     foreach ($defautArray as $value) {
     ?>
     
-            <div class="col-lg-3">
+            
                 <div class="card mx-auto my-3 bg-white cardSizes">
                 <div class="card-body">
                     <!-- Image -->
@@ -24,7 +24,6 @@ if (empty($_GET)) {
                     <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
                 </div>
             </div>
-        </div>
 <?php
     }
 }
