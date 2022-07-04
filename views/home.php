@@ -3,10 +3,9 @@
 if (empty($_GET)) {
     $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
     foreach ($defautArray as $value) {
-    ?>
-    
-            <div class="col-lg-3">
-                <div class="card mx-auto my-3 bg-white cardSizes">
+    ?>    
+        <div class="col-lg-3">
+            <div class="card bg-white my-3 cardSizes mx-auto">
                 <div class="card-body">
                     <!-- Image -->
                     <p class="card-text removeTxt"><?=$value[2]?></p>
@@ -36,50 +35,55 @@ if (!empty($_GET['cat'])) {
         $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
         foreach ($defautArray as $value) {
         ?>
-        <div class="card mx-auto my-3 bg-white" style="width: 20rem;">
-    <div class="card-body">
-        <!-- Image -->
-        <p class="card-text removeTxt"><?=$value[2]?></p>
-        <!-- le Titre -->
-        <h5 class="card-title">
-        <?=$value[1] ?>
-        </h5>
-        <!-- la date -->
-        <p>
-        <?=$value[0]?>
-        </p>
-        <!-- quick description -->
-        <p class="card-text removeImg"><?=$value[2]?></p>
-        <!-- le bouton avec le lien vers l'article -->
-        <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
-    </div>
-</div><?php
+            <div class="col-lg-3">
+                <div class="card mx-auto my-3 bg-white cardSizes">
+                <div class="card-body">
+                    <!-- Image -->
+                    <p class="card-text removeTxt"><?=$value[2]?></p>
+                    <!-- le Titre -->
+                    <h5 class="card-title">
+                    <?=$value[1] ?>
+                    </h5>
+                    <!-- la date -->
+                    <p>
+                    <?=$value[0]?>
+                    </p>
+                    <!-- quick description -->
+                    <p class="card-text removeImg"><?=$value[2]?></p>
+                    <!-- le bouton avec le lien vers l'article -->
+                    <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
+                </div>
+            </div>
+        </div>
+<?php
         }
     } else {
         $oneCat = onlyOneFlux($cat, $megaArray);
         foreach ($oneCat as $key => $value) {
             ?>
-        <div class="card mx-auto my-3 bg-white" style="width: 20rem;">
-    <div class="card-body">
-        <!-- Image -->
-        <p class="card-text removeTxt"><?=$value[2]?></p>
-        <!-- le Titre -->
-        <h5 class="card-title">
-        <?=$value[1] ?>
-        </h5>
-        <!-- la date -->
-        <p>
-        <?=$value[0]?>
-        </p>
-        <!-- quick description -->
-        <p class="card-text removeImg"><?=$value[2]?></p>
-        <!-- le bouton avec le lien vers l'article -->
-        <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
-    </div>
-</div><?php
+            <div class="col-lg-3">
+                <div class="card mx-auto my-3 bg-white cardSizes">
+                <div class="card-body">
+                    <!-- Image -->
+                    <p class="card-text removeTxt"><?=$value[2]?></p>
+                    <!-- le Titre -->
+                    <h5 class="card-title">
+                    <?=$value[1] ?>
+                    </h5>
+                    <!-- la date -->
+                    <p>
+                    <?=$value[0]?>
+                    </p>
+                    <!-- quick description -->
+                    <p class="card-text removeImg"><?=$value[2]?></p>
+                    <!-- le bouton avec le lien vers l'article -->
+                    <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
+                </div>
+            </div>
+        </div>
+<?php
         }
     }
-
 }
 
 $customizedArray = customizedRSSArray($megaArray, 12, 2, 0, 1);
