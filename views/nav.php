@@ -1,15 +1,14 @@
                 <!-- Nav bar en mode < 576 px  -->
 <div>
     <nav class="navbar navbar-expand-lg text-center <?=$bgClass?> navBarSm">
-        <div class="container-fluid justify-content-around ">
-                <a  href="../controllers/parameters-controller.php" class="bi bi-gear gear <?=$txtClass?> justify-content-start img-fluid" ></a>
-                <a href="../controllers/pages-controller.php"><img src="../public/assets/img/lEQUIPE_22Logo.png" class="logo"  alt="logo de l'équipe 22 avec style, une chaussure multicolor"></a>
-                <div>
-                <h1 class="title <?=$txtClass?>">L'EQUIPE 22 </h1>
-                <h3 class="<?=$txtClass?> slogan">L'info Sport</h3>
-                </div>
-
-                <button class="navbar-toggler buttonNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid justify-content-between ">
+            <a  href="../controllers/pages-controller.php" class="bi bi-gear gear <?=$txtClass?> img-fluid" ></a>
+            <div>
+                    <a  class="link" href="../controllers/pages-controller.php"><h1 class="title <?=$txtClass?>">L'EQUIPE 22 </h1></a>
+                    <a  class="link" href="../controllers/pages-controller.php"><h3 class="<?=$txtClass?> slogan">L'info Sport</h3></a>
+            </div>
+            
+            <button class="navbar-toggler buttonNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon iconNav <?=$btnClass?>"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,6 +24,7 @@
                         </li>
                     </ul>
             </div>
+
         </div>
     </nav>
 </div>
