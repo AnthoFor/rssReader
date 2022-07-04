@@ -1,23 +1,40 @@
 <?php
 $intermediate = json_decode($_COOKIE['categories']);
-var_dump($intermediate);
-die;
-if (!empty($_COOKIE['categories'])) {   
-    $preference1 = json_decode($_COOKIE['categories'][0]);
-    $preference2 = json_decode($_COOKIE['categories'][1]);
-    if (!empty(json_decode($_COOKIE['categories'][2]))) {
-        $preference3 = json_decode($_COOKIE['categories'][2]);
+if (!empty($intermediate)) {   
+    $preference1 = $intermediate[0];
+    $preference2 = $intermediate[1];
+    if (count($intermediate) >= 3) {
+        $preference3 = $intermediate[2];
     } else { $preference3 = null;}
-    $customizedArray = customizedRSSArray($megaArray, 12, $preference1, $preference2, $preference3);
-    // foreach ($customizedArray as $key => $value) {
-    //     echo '<p>'.$value[0].'</p>';
-    //     echo '<p>'.$value[1].'</p>';
-    //     echo '<p>'.$value[2].'</p>';
-    //     echo '<p>'.$value[3].'</p>';
-    // }
-}
-//Si get est empty, gogo tableau par défaut ( foot + basket + tennis)
-if (empty($_GET)) {
+    $customizedArray = customizedRSSArray($megaArray, 12, 2, $preference1, $preference2, $preference3);
+    // var_dump($customizedArray);
+    foreach ($customizedArray as $key => $value) {
+        ?>
+                <div class="card mx-auto my-3 bg-white cardSizes">
+                <div class="card-body">
+                    <!-- Image -->
+                    <p class="card-text removeTxt"><?=$value[2]?></p>
+                    <!-- le Titre -->
+                    <h5 class="card-title">
+                    <?=$value[1] ?>
+                    </h5>
+                    <!-- la date -->
+                    <p>
+                    <?=$value[0]?>
+                    </p>
+                    <!-- quick description -->
+                    <p class="card-text removeImg align-self-stretch"><?=$value[2]?></p>
+                    <!-- le bouton avec le lien vers l'article -->
+                    <div class="position-relative">
+                        <a href="<?=$value[3]?>" class="btn btn-primary position-absolute bottom-0 end-0" target="_blank">Voir article</a>
+                    </div>
+                    
+                </div>
+            </div>
+<?php
+    }
+    //Si get est empty, gogo tableau par défaut ( foot + basket + tennis)
+} elseif (empty($_GET)) {
     $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
     foreach ($defautArray as $value) {
     ?>

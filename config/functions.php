@@ -16,13 +16,13 @@ function defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis) {
  * @param int $nbTheme $nbTheme fait référence au nombre de theme voulu par l'utilisateur ( 2 ou 3)
  * @param int $preference1 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
  * @param int $preference2 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
- * @param int $preference3 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
+ * @param  $preference3 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
  * 
  * @return [type]
  * 
  */
 
-function customizedRSSArray ($megaArray, $nbFluxToShowTotal, int $nbTheme, int $preference1, int $preference2, int $preference3 = NULL) {
+function customizedRSSArray ($megaArray, $nbFluxToShowTotal, int $nbTheme, int $preference1, int $preference2, $preference3 = NULL) {
     //$nbTheme = nombre de theme choisi par l'utilisateur, 2 ou 3. ( si il en selectionne 1, go go fonction onlyOneFlux)
     //si 2 themes avec 9 flux, bah ca fera 4 et 4.
     $nbFluxUnity = round($nbFluxToShowTotal / $nbTheme, 0, PHP_ROUND_HALF_UP); 

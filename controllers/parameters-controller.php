@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $errorMsgNewsDisplay["newsDisplay"] = 'Merci de choisir uniquement une des propositions';
         }
     }
-    header("Refresh:0");
+    header("Refresh: 0 url=pages-controller.php");
 }
 // Gestion des cookies
 
