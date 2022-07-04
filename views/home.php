@@ -36,7 +36,7 @@ if (!empty($_GET['cat'])) {
         $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
         foreach ($defautArray as $value) {
         ?>
-        <div class="card mx-auto my-3 bg-white" style="width: 20rem;">
+        <div class="card mx-auto my-3 bg-white cardSizes" >
     <div class="card-body">
         <!-- Image -->
         <p class="card-text removeTxt"><?=$value[2]?></p>
@@ -59,7 +59,7 @@ if (!empty($_GET['cat'])) {
         $oneCat = onlyOneFlux($cat, $megaArray);
         foreach ($oneCat as $key => $value) {
             ?>
-        <div class="card mx-auto my-3 bg-white" style="width: 20rem;">
+        <div class="card mx-auto my-3 bg-white cardSizes">
     <div class="card-body">
         <!-- Image -->
         <p class="card-text removeTxt"><?=$value[2]?></p>
