@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (is_numeric($darkMode)) {
         $resultDarkMode = filter_var($darkMode, FILTER_VALIDATE_BOOLEAN);
         if (!$resultDarkMode) {
-            $errorMsg["darkMode"] = 'Erreur de thème';
+            $errorMsgDarkMode["darkMode"] = 'Erreur de thème';
         }
     }
     $categories = array();
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (is_numeric($newsDisplay)) {
         $resultnewsDisplay = filter_var($newsDisplay, FILTER_VALIDATE_INT);
         if (!$resultNewsDisplay) {
-            $errorMsg["newsDisplay"] = 'Merci de choisir uniquement une des propositions';
+            $errorMsgNewsDisplay["newsDisplay"] = 'Merci de choisir uniquement une des propositions';
         }
     }
 }
