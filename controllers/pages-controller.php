@@ -41,8 +41,14 @@
 
 
     include(__DIR__.'/../views/header.php');
-    include(__DIR__.'/../views/home.php');
-    include(__DIR__.'/../views/pages.php');
+    ?>
+    <div class="container-fluid d-flex">        
+        <?php
+            include(__DIR__.'/../views/home.php');
+        ?>
+    </div>
+    <?php
+    // include(__DIR__.'/../views/pages.php');
     include(__DIR__.'/../views/footer.php');
     
 ?>
