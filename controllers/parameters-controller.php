@@ -48,9 +48,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // choix des catégories à filter par l'utilisateur
     $categories = filter_input(INPUT_POST, 'categories', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
     if(!empty($categories)) {
-        setcookie('categories', json_encode($categories), time() + (60*60*24*30));
-    } elseif (!$categories) {
+        if ($categories == 0 || $categories == 1 || $categories == 2 || $categories == 3 || $categories == 4) {
+            setcookie('categories', json_encode($categories), time() + (60*60*24*30));
+        } else {
         $errorMsg["categories"] = 'Merci de séléctionner une catégorie parmi celles proposées';
+        } 
+    } else {
+        setcookie('categories', '');
     }
 
     

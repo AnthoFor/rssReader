@@ -62,19 +62,19 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="<?=$txtClass?> text-decoration-none">Actualités générales</a>
+              <a href="../controllers/pages-controller.php?cat=global" class="<?=$txtClass?> text-decoration-none">Actualités générales</a>
             </li>
             <li>
-              <a href="#!" class="<?=$txtClass?> text-decoration-none">Football</a>
+              <a href="../controllers/pages-controller.php?cat=foot" class="<?=$txtClass?> text-decoration-none">Football</a>
             </li>
             <li>
-              <a href="#!" class="<?=$txtClass?> text-decoration-none">Tennis</a>
+              <a href="../controllers/pages-controller.php?cat=tennis" class="<?=$txtClass?> text-decoration-none">Tennis</a>
             </li>
             <li>
-              <a href="#!" class="<?=$txtClass?> text-decoration-none">Rugby</a>
+              <a href="../controllers/pages-controller.php?cat=rugby" class="<?=$txtClass?> text-decoration-none">Rugby</a>
             </li>
             <li>
-              <a href="#!" class="<?=$txtClass?> text-decoration-none">Basket</a>
+              <a href="../controllers/pages-controller.php?cat=basket" class="<?=$txtClass?> text-decoration-none">Basket</a>
             </li>
           </ul>
       </div>

@@ -1,7 +1,8 @@
 <?php
-function defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis) {
+function defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis, int $nbPerTheme = 6) {
     $defautArray = array();
-    for ($i=0; $i < 6; $i++) {
+    $result = $nbPerTheme / 3;
+    for ($i=0; $i < $result; $i++) {
         array_push($defautArray,[$arrayFoot[$i][0], $arrayFoot[$i][1], $arrayFoot[$i][2], $arrayFoot[$i][3]]);
         array_push($defautArray,[$arrayBasket[$i][0], $arrayBasket[$i][1], $arrayBasket[$i][2], $arrayBasket[$i][3]]); 
         array_push($defautArray,[$arrayTennis[$i][0], $arrayTennis[$i][1], $arrayTennis[$i][2], $arrayTennis[$i][3]]);
@@ -43,8 +44,8 @@ function customizedRSSArray ($megaArray, $nbFluxToShowTotal = 12, int $nbTheme, 
     }
     //préférence 2
     if ($preference2 != NULL) {
-        if ($nbTheme == 2 && $nbFluxToShowTotal == 8) {
-            $nbFluxUnity = 5;
+        if ($nbTheme == 2 && $nbFluxToShowTotal == 9) {
+            $nbFluxUnity = 4;
         }
         for ($i=0; $i < $nbFluxUnity; $i++) {
             if ($preference2 == 0) {
