@@ -5,7 +5,6 @@ if (empty($_GET)) {
     foreach ($defautArray as $value) {
     ?>
     
-            
                 <div class="card mx-auto my-3 bg-white cardSizes">
                 <div class="card-body">
                     <!-- Image -->
@@ -59,7 +58,7 @@ if (!empty($_GET['cat'])) {
         foreach ($oneCat as $key => $value) {
             ?>
         <div class="card mx-auto my-3 bg-white cardSizes">
-    <div class="card-body">
+        <div class="card-body">
         <!-- Image -->
         <p class="card-text removeTxt"><?=$value[2]?></p>
         <!-- le Titre -->
