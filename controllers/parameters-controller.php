@@ -28,8 +28,6 @@
 
 
 <!-- Gestion des cookiess -->
-=======
->>>>>>> origin/retrieveData
 <?php
 
 if (!empty($_COOKIE['darkMode'])) {
