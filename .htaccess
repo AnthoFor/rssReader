@@ -1,17 +1,26 @@
 ErrorDocument 404 /404.php
 
 
-# On suit les liens symboliques 
-Options +FollowSymlinks 
-# Activation du mod rewrite d'Apache 
-RewriteEngine On
+#--------------------------------------------------
+# Répertoire : /articles/
+#--------------------------------------------------
 
-# Réécriture de index.html en index.php 
-RewriteRule ^accueil\.html$ /index.php 
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
 
-# Réécriture de parametre.html vers parametre-controller.php
-RewriteRule ^parametre\.html$ /parameters-controller.php 
+# Activation du module de réécriture d'URL :
+RewriteEngine on
 
-# Réécriture de pages-controller.php?cat=foot.html vers categorie-foot.php
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
 
-RewriteRule ^page-controller\.php?cat=foot$ /categorie-foot\.php [L]
+
+# Article avec numéro de page :
+RewriteRule "accueil.html" "controllers/pages-controller.php" 
+RewriteRule "parametres.html" "controllers/parameters-controller.php" 
+RewriteRule "monfluxRSS.html" "controllers/pages-controller.php" 
+RewriteRule "sujet1.html" "views/pages1.php" 
+RewriteRule "sujet2.html" "views/pages2.php" 
+
+ErrorDocument 404 http://myrssfeed.localhost/error404.php
