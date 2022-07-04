@@ -1,14 +1,17 @@
 <?php
-// var_dump($_COOKIE); 
-if (!empty($_COOKIE['categories'])) {
-$intermediate = json_decode($_COOKIE['categories']);
-    if (!empty($intermediate)) {        
+if (!empty($_COOKIE['categories']) && empty($_GET['cat'])) {
+    $intermediate = json_decode($_COOKIE['categories']);
+    if (!empty($_COOKIE['newsDisplay'])) {
+        $newsDisplay = $_COOKIE['newsDisplay'];
+    }
+    if (!empty($intermediate)) {
+        $howManyThemeChoosen =  count($intermediate);       
         $preference1 = $intermediate[0];
         $preference2 = $intermediate[1];
-        if (count($intermediate) >= 3) {
+        if ($howManyThemeChoosen >= 3) {
             $preference3 = $intermediate[2];
         } else { $preference3 = null;}
-        $customizedArray = customizedRSSArray($megaArray, 12, 2, $preference1, $preference2, $preference3);
+        $customizedArray = customizedRSSArray($megaArray, $newsDisplay-1, $howManyThemeChoosen, $preference1, $preference2, $preference3);
         foreach ($customizedArray as $key => $value) {
             ?>
                     <div class="card mx-auto my-3 bg-white cardSizes">

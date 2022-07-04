@@ -1,12 +1,37 @@
 <?php
+$categories = array();
+//Tableau d'erreur
+$errorMsg[] = '';
+
 require_once(__DIR__.'/../controllers/global-controller.php');
+//=========== Récupération des data des cookies si y en a =======================
+    // ->> darkMode
 if (!empty($_COOKIE['darkMode'])) {
     $darkMode = $_COOKIE['darkMode'];
 } else {
     $darkMode = NULL;
 }
 
-$errorMsg[] = '';
+// ->> Catégorie
+if (!empty($_COOKIE['categories'])) {
+    $intermediate = json_decode($_COOKIE['categories']);
+    
+    foreach ($intermediate as $value) {
+        array_push($categories, $value);
+    }
+}
+
+// ->> newsDisplay ( nombre de flux to draw)
+if (!empty($_COOKIE['newsDisplay'])) {
+    // var_dump($_COOKIE['newsDisplay']);
+    if ($_COOKIE['newsDisplay'] == 6 || $_COOKIE['newsDisplay'] == 9 || $_COOKIE['newsDisplay'] == 12) {
+        $newsDisplay = intval($_COOKIE['newsDisplay']);
+    } else {
+        $errorMsg["newsDisplay"] = 'Merci de choisir 6, 9 ou 12';
+    }
+}
+
+
 
 // initiation méthode POST + cookies
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -32,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Choix utilisateur d'articles à afficher sur la page
     $newsDisplay = intval(filter_input(INPUT_POST, 'newsDisplay', FILTER_SANITIZE_NUMBER_INT));
     if ($newsDisplay != 6 && $newsDisplay != 9 && $newsDisplay != 12) {
-        $errorMsgnewsDisplay["newsDisplay"] = 'Merci de choisir parmi les options proposées';
+        $errorMsg["newsDisplay"] = 'Merci de choisir parmi les options proposées';
     } else {
         setcookie('newsDisplay', $newsDisplay, time() + (60*60*24*30));
     }
