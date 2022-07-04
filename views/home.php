@@ -20,7 +20,9 @@ if (empty($_GET)) {
                     <!-- quick description -->
                     <p class="card-text removeImg"><?=$value[2]?></p>
                     <!-- le bouton avec le lien vers l'article -->
-                    <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
+                    <div class="d-flex justify-content-center align-items-end">
+                        <a href="<?=$value[3]?>" class="btn btn-secondary">Voir article</a>
+                    </div>
                 </div>
             </div>
 <?php
