@@ -1,7 +1,7 @@
 
 
 
-    <div class="container-fluid rounded w-50">
+    <div class="container-fluid rounded w-65">
         <div class="container d-flex justify-content-center align-items-center vh-100 vw-90">
             <form class="row justify-content-center rounded" method="POST">
                 <label class="parameters text-center fw-bolder mb-5 mt-3" for="parameters">PARAMÈTRES</label>

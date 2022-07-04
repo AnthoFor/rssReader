@@ -14,4 +14,4 @@ RewriteRule ^parametre\.html$ /parameters-controller.php
 
 # Réécriture de pages-controller.php?cat=foot.html vers categorie-foot.php
 
-RewriteRule ^page-controller\.php?cat=foot\.html$ /categorie-foot\.php [L]
+RewriteRule ^page-controller\.php?cat=foot$ /categorie-foot\.php [L]
