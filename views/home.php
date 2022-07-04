@@ -4,7 +4,6 @@ if (empty($_GET)) {
     $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
     foreach ($defautArray as $value) {
     ?>
-    
                 <div class="card mx-auto my-3 bg-white cardSizes">
                 <div class="card-body">
                     <!-- Image -->
@@ -18,9 +17,12 @@ if (empty($_GET)) {
                     <?=$value[0]?>
                     </p>
                     <!-- quick description -->
-                    <p class="card-text removeImg"><?=$value[2]?></p>
+                    <p class="card-text removeImg align-self-stretch"><?=$value[2]?></p>
                     <!-- le bouton avec le lien vers l'article -->
-                    <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
+                    <div class="position-relative">
+                        <a href="<?=$value[3]?>" class="btn btn-primary position-absolute bottom-0 end-0">Voir article</a>
+                    </div>
+                    
                 </div>
             </div>
 <?php
