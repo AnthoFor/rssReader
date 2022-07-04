@@ -37,8 +37,9 @@
         array_push($arrayTennis, [$value->pubDate, $value->title, $value->description, $value->link]);
     }
     array_push($megaArray, $arrayBasket, $arrayFoot, $arrayRugby, $arrayTennis, $arrayGlobal);
-
-
+    
+    //Gestion du darkMode en fonction des cookies
+    
 
     include(__DIR__.'/../views/header.php');
     ?>
