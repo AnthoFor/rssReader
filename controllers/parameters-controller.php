@@ -1,12 +1,11 @@
 <!-- Récupération des préférences users -->
 <?php
-
+require_once(__DIR__.'/../controllers/global-controller.php');
 if (!empty($_COOKIE['darkMode'])) {
     $darkMode = $_COOKIE['darkMode'];
 } else {
     $darkMode = NULL;
 }
-
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $darkMode = intval(filter_input(INPUT_POST, 'darkMode', FILTER_SANITIZE_NUMBER_INT));
@@ -16,12 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         setcookie('darkMode', $darkMode, time() + (60*60*24*30));
     }
 
-    $categories = filter_input(INPUT_POST, 'categories', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
-    var_dump($categories);
-    if(!empty($categories)) {
-        setcookie('categories', serialize($categories), time() + (60*60*24*30));
 
+//Catégories
+    $categories = filter_input(INPUT_POST, 'categories', FILTER_SANITIZE_NUMBER_INT, FILTER_REQUIRE_ARRAY);
+    if(!empty($categories)) {
+        setcookie('categories', json_encode($categories), time() + (60*60*24*30));
     }
+
     // $categoriesArray = array();
     // if (count($categories) > 0 && count($categories) <= 3) {
     //     foreach ($categories as $categorie) {
@@ -42,10 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $errorMsgNewsDisplay["newsDisplay"] = 'Merci de choisir uniquement une des propositions';
         }
     }
+    header("Refresh:0");
 }
 // Gestion des cookies
 
 
 include(__DIR__ . '/../views/header.php');
 include(__DIR__ . '/../views/parameters.php');
+include(__DIR__ . '/../views/footer.php');
 ?>

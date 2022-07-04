@@ -1,5 +1,6 @@
 <?php
     require_once(__DIR__.'/../config/functions.php');
+    require_once(__DIR__.'/../controllers/global-controller.php');
     //Sport global
     $rssFeedGlobal = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/fil-sport/"));
     //RSS Basket

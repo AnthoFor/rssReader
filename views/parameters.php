@@ -15,23 +15,23 @@
                 <div class="col-auto">
                     <label for="flux" class="fw-bold mb-2">Vos préférences de flux</label>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" name="categories[]" type="checkbox" value="generalNews" id="generalNews">
+                        <input class="form-check-input" name="categories[]" type="checkbox" value="0" id="generalNews">
                         <label class="form-check-label" for="generalNews">Actualités générales</label>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" name="categories[]" type="checkbox" value="football" id="football">
+                        <input class="form-check-input" name="categories[]" type="checkbox" value="1" id="football">
                         <label class="form-check-label" for="football">Football</label>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" name="categories[]" type="checkbox" value="tennis" id="tennis">
+                        <input class="form-check-input" name="categories[]" type="checkbox" value="2" id="tennis">
                         <label class="form-check-label" for="tennis">Tennis</label>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" name="categories[]" type="checkbox" value="rugby" id="rugby">
+                        <input class="form-check-input" name="categories[]" type="checkbox" value="3" id="rugby">
                         <label class="form-check-label" for="rugby">Rugby</label>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" name="categories{]" type="checkbox" value="basketBall" id="basketBall">
+                        <input class="form-check-input" name="categories{]" type="checkbox" value="4" id="basketBall">
                         <label class="form-check-label" for="basketBall">Basket</label>
                     </div>
                 </div>
@@ -57,4 +57,3 @@
             </form>
         </div>
     </div>
-    <?php include(__DIR__.'\footer.php');

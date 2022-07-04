@@ -1,42 +1,8 @@
 <!-- CDN js Bootstrap -->
 <!-- Footer -->
-<footer class="bg-light text-center text-dark">
+<footer class="<?=$bgClass?> text-center <?=$txtClass?>">
   <!-- Grid container -->
   <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f">Facebook</i
-      ></a>
-
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
-
-      <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-google"></i
-      ></a>
-
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-
     <!-- Section: Form -->
     <section class="border-top">
       <form action="">
@@ -92,23 +58,23 @@
       <div class="row">
         <!--Grid column-->
         <div class="col-auto text-center mx-auto">
-          <h5 class="text-uppercase text-dark">Liens</h5>
+          <h5 class="text-uppercase <?=$txtClass?>">Liens</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-dark text-decoration-none">Actualités générales</a>
+              <a href="#!" class="<?=$txtClass?> text-decoration-none">Actualités générales</a>
             </li>
             <li>
-              <a href="#!" class="text-dark text-decoration-none">Football</a>
+              <a href="#!" class="<?=$txtClass?> text-decoration-none">Football</a>
             </li>
             <li>
-              <a href="#!" class="text-dark text-decoration-none">Tennis</a>
+              <a href="#!" class="<?=$txtClass?> text-decoration-none">Tennis</a>
             </li>
             <li>
-              <a href="#!" class="text-dark text-decoration-none">Rugby</a>
+              <a href="#!" class="<?=$txtClass?> text-decoration-none">Rugby</a>
             </li>
             <li>
-              <a href="#!" class="text-dark text-decoration-none">Basket</a>
+              <a href="#!" class="<?=$txtClass?> text-decoration-none">Basket</a>
             </li>
           </ul>
       </div>
@@ -119,9 +85,9 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center text-white bg-dark p-3">
+  <div class="text-center <?=$txtClass?> <?=$bgClass?> p-3">
     © 2022 Copyright:
-    <span class="text-white">L'ÉQUIPE 22 </span>
+    <span class="<?=$txtClass?>">L'ÉQUIPE 22 </span>
   </div>
   <!-- Copyright -->
 </footer>
