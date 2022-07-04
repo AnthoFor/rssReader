@@ -1,4 +1,3 @@
-<!-- Récupération des préférences users -->
 <?php
 require_once(__DIR__.'/../controllers/global-controller.php');
 if (!empty($_COOKIE['darkMode'])) {

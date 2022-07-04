@@ -1,1 +1,17 @@
 ErrorDocument 404 /404.php
+
+
+# On suit les liens symboliques 
+Options +FollowSymlinks 
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+
+# Réécriture de index.html en index.php 
+RewriteRule ^accueil\.html$ /index.php 
+
+# Réécriture de parametre.html vers parametre-controller.php
+RewriteRule ^parametre\.html$ /parameters-controller.php 
+
+# Réécriture de pages-controller.php?cat=foot.html vers categorie-foot.php
+
+RewriteRule ^page-controller\.php?cat=foot$ /categorie-foot\.php [L]
