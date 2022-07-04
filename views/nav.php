@@ -2,7 +2,7 @@
 <div>
     <nav class="navbar navbar-expand-lg text-center <?=$bgClass?> navBarSm">
         <div class="container-fluid justify-content-between ">
-            <a  href="../controllers/pages-controller.php" class="bi bi-gear gear <?=$txtClass?> img-fluid" ></a>
+            <a  href="../controllers/parameters-controller.php" class="bi bi-gear gear <?=$txtClass?> img-fluid" ></a>
             <div>
                     <a  class="link" href="../controllers/pages-controller.php"><h1 class="title <?=$txtClass?>">L'EQUIPE 22 </h1></a>
                     <a  class="link" href="../controllers/pages-controller.php"><h3 class="<?=$txtClass?> slogan">L'info Sport</h3></a>
