@@ -3,9 +3,10 @@
 if (empty($_GET)) {
     $defautArray = defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis);
     foreach ($defautArray as $value) {
-    ?>    
-        <div class="col-lg-3">
-            <div class="card bg-white my-3 cardSizes mx-auto">
+    ?>
+    
+
+                <div class="card mx-auto my-3 bg-white cardSizes">
                 <div class="card-body">
                     <!-- Image -->
                     <p class="card-text removeTxt"><?=$value[2]?></p>
@@ -23,7 +24,6 @@ if (empty($_GET)) {
                     <a href="<?=$value[3]?>" class="btn btn-primary">Voir article</a>
                 </div>
             </div>
-        </div>
 <?php
     }
 }
@@ -59,7 +59,7 @@ if (!empty($_GET['cat'])) {
         foreach ($oneCat as $key => $value) {
             ?>
         <div class="card mx-auto my-3 bg-white cardSizes">
-    <div class="card-body">
+        <div class="card-body">
         <!-- Image -->
         <p class="card-text removeTxt"><?=$value[2]?></p>
         <!-- le Titre -->
