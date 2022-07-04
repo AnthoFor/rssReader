@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // choix des catégories à filter par l'utilisateur
     $categories = filter_input(INPUT_POST, 'categories', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
     if(!empty($categories)) {
-        setcookie('categories', serialize($categories), time() + (60*60*24*30));
+        setcookie('categories', json_encode($categories), time() + (60*60*24*30));
     } elseif (!$categories) {
         $errorMsg["categories"] = 'Merci de séléctionner une catégorie parmi celles proposées';
     }
