@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body class="<?=$bgClass?>">
 
     <header>
         <!-- include de la nav bar bootstrap -->

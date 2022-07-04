@@ -1,5 +1,6 @@
 <?php
     require_once(__DIR__.'/../config/functions.php');
+    require_once(__DIR__.'/../controllers/global-controller.php');
     //Sport global
     $rssFeedGlobal = new SimpleXMLElement(file_get_contents("https://rmcsport.bfmtv.com/rss/fil-sport/"));
     //RSS Basket
@@ -37,8 +38,9 @@
         array_push($arrayTennis, [$value->pubDate, $value->title, $value->description, $value->link]);
     }
     array_push($megaArray, $arrayBasket, $arrayFoot, $arrayRugby, $arrayTennis, $arrayGlobal);
-
-
+    
+    //Gestion du darkMode en fonction des cookies
+    
 
     include(__DIR__.'/../views/header.php');
     ?>
