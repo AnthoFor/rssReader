@@ -41,7 +41,7 @@
     <section class="border-top">
       <form action="">
         <!--Grid row-->
-        <div class="row d-flex  justify-content-center">
+        <div class="row d-flex my-3 justify-content-center">
           <!--Grid column-->
           <div class="col-auto">
             <p class="pt-2">
