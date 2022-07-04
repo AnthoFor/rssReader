@@ -10,7 +10,7 @@
             
             <button class="navbar-toggler buttonNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon iconNav <?=$btnClass?>"></span>
-                </button>
+            </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item dropdown ">
@@ -33,7 +33,7 @@
                         <!-- Nav bar en mode > 576 px  -->
 <div>
     <nav class="navbar text-center <?=$bgClass?> navBarLg">
-        <div class="container-fluid justify-content-around  w-100">
+        <div class="container-fluid justify-content-between  w-100">
             <a  href="../controllers/parameters-controller.php" class="bi bi-gear gear <?=$txtClass?> justify-content-start" ></a>
         <div>
             <h1 class="title <?=$txtClass?> ">L'EQUIPE 22 </h1>
