@@ -26,13 +26,13 @@ body {
     padding-right: 30px;
 }
 .categories{
-    color: white;
+    color: black;
 }
 
 .iconSports{
     height: 30px;
     width: 30px;
-    filter: brightness(0) invert(1);
+
 }
 
 .image404{
