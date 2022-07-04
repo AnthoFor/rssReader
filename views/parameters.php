@@ -7,7 +7,7 @@
                 <div class="col-12 d-flex justify-content-center align-items-center mb-5">
                     <label class="form-check-label"></label>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="darkMode">
+                        <input class="form-check-input" name="darkMode" type="checkbox" id="darkMode">
                         <label class="form-check-label" for="">Thème sombre</label>
                     </div>
                 </div>
@@ -38,15 +38,15 @@
                 <label class="text-center fw-bold mt-5 mb-1" for="newsDisplay">Nombre d'actualités à afficher sur la page</label>
                 <div class="col-12 d-flex justify-content-center">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="newsDisplay" id="six" value="1">
                         <label class="form-check-label" for="inlineRadio1">6</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="newsDisplay" id="nine" value="2">
                         <label class="form-check-label" for="inlineRadio1">9</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="newsDisplay" id="twelve" value="3">
                         <label class="form-check-label" for="inlineRadio1">12</label>
                     </div>
                 </div>
