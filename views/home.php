@@ -30,7 +30,7 @@ if (!empty($_COOKIE['categories']) && empty($_GET['cat'])) {
                         <p class="card-text removeImg img-fluid align-self-stretch"><?=$value[2]?></p>
                         <!-- le bouton avec le lien vers l'article -->
                         <div class="position-relative">
-                            <a href="<?=$value[3]?>" class="btn btn-primary position-absolute bottom-0 end-0" target="_blank">Voir article</a>
+                            <a href="<?=$value[3]?>" class="btn btn-dark position-absolute bottom-0 end-0" target="_blank">Voir article</a>
                         </div>
                         
                     </div>
@@ -59,7 +59,7 @@ if (!empty($_COOKIE['categories']) && empty($_GET['cat'])) {
                     <p class="card-text removeImg align-self-stretch"><?=$value[2]?></p>
                     <!-- le bouton avec le lien vers l'article -->
                     <div class="position-relative">
-                        <a href="<?=$value[3]?>" class="btn btn-primary position-absolute bottom-0 end-0" target="_blank">Voir article</a>
+                        <a href="<?=$value[3]?>" class="btn btn-dark position-absolute bottom-0 end-0" target="_blank">Voir article</a>
                     </div>
                     
                 </div>
@@ -90,7 +90,7 @@ if (!empty($_GET['cat'])) {
         <!-- quick description -->
         <p class="card-text removeImg"><?=$value[2]?></p>
         <!-- le bouton avec le lien vers l'article -->
-        <a href="<?=$value[3]?>" class="btn btn-primary" target="_blank">Voir article</a>
+        <a href="<?=$value[3]?>" class="btn btn-dark" target="_blank">Voir article</a>
     </div>
 </div><?php
         }
@@ -113,7 +113,7 @@ if (!empty($_GET['cat'])) {
         <!-- quick description -->
         <p class="card-text removeImg"><?=$value[2]?></p>
         <!-- le bouton avec le lien vers l'article -->
-        <a href="<?=$value[3]?>" class="btn btn-primary" target="_blank">Voir article</a>
+        <a href="<?=$value[3]?>" class="btn btn-dark" target="_blank">Voir article</a>
     </div>
 </div><?php
         }
