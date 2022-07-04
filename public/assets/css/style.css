@@ -106,3 +106,15 @@ body > div > div > form {
     background-color: #D9D9D9;
 }
 /* header */
+
+/* Modification de description et image pour n'afficher qu'un l'un des 2 */
+
+.removeTxt {
+    font-size: 0px;
+}
+.removeTxt img {
+    max-width: 100%;
+}
+.removeImg img {
+    display: none;
+}
