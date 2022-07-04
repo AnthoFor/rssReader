@@ -7,8 +7,10 @@ if (!empty($_COOKIE['categories']) && empty($_GET['cat'])) {
     if (!empty($intermediate)) {
         $howManyThemeChoosen =  count($intermediate);       
         $preference1 = $intermediate[0];
+        if ($howManyThemeChoosen > 1) {
         $preference2 = $intermediate[1];
-        if ($howManyThemeChoosen >= 3) {
+        } else {$preference2 = null;}
+        if ($howManyThemeChoosen > 2) {
             $preference3 = $intermediate[2];
         } else { $preference3 = null;}
         $customizedArray = customizedRSSArray($megaArray, $newsDisplay-1, $howManyThemeChoosen, $preference1, $preference2, $preference3);

@@ -15,16 +15,16 @@ function defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis) {
  * @param int $nbFluxToShowTotal $nbFluxToShowTotal fait référence au nombre de flux souhaité (6, 9 ou 12)
  * @param int $nbTheme $nbTheme fait référence au nombre de theme voulu par l'utilisateur ( 2 ou 3)
  * @param int $preference1 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
- * @param int $preference2 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
+ * @param  $preference2 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
  * @param  $preference3 fait référence au type de flux (basket 0, foot 1, rugby 2, tennis 3, global 4)
  * 
  * @return [type]
  * 
  */
 
-function customizedRSSArray ($megaArray, $nbFluxToShowTotal = 12, int $nbTheme, int $preference1, int $preference2, $preference3 = NULL) {
+function customizedRSSArray ($megaArray, $nbFluxToShowTotal = 12, int $nbTheme, int $preference1, $preference2 = NULL, $preference3 = NULL) {
     //$nbTheme = nombre de theme choisi par l'utilisateur, 2 ou 3. ( si il en selectionne 1, go go fonction onlyOneFlux)
-    //si 2 themes avec 9 flux, bah ca fera 4 et 4.
+    //si 2 themes avec 9 flux, bah ca fera 4 et 5.
     $nbFluxUnity = round($nbFluxToShowTotal / $nbTheme, 0, PHP_ROUND_HALF_UP); 
     $customizedArray = array(); 
     //preference 1
@@ -42,38 +42,42 @@ function customizedRSSArray ($megaArray, $nbFluxToShowTotal = 12, int $nbTheme, 
         }
     }
     //préférence 2
-    for ($i=0; $i < $nbFluxUnity; $i++) {
-        if ($preference2 == 0) {
-            array_push($customizedArray, [$megaArray[0][$i][0], $megaArray[0][$i][1], $megaArray[0][$i][2], $megaArray[0][$i][3]]);
-        } elseif ($preference2 == 1) {
-            array_push($customizedArray, [$megaArray[1][$i][0], $megaArray[1][$i][1], $megaArray[1][$i][2], $megaArray[1][$i][3]]);
-        } elseif ($preference2 == 2) {
-            array_push($customizedArray, [$megaArray[2][$i][0], $megaArray[2][$i][1], $megaArray[2][$i][2], $megaArray[2][$i][3]]);
-        } elseif ($preference2 == 3) {
-            array_push($customizedArray, [$megaArray[3][$i][0], $megaArray[3][$i][1], $megaArray[3][$i][2], $megaArray[3][$i][3]]);
-        } elseif ($preference2 == 4) {
-            array_push($customizedArray, [$megaArray[4][$i][0], $megaArray[4][$i][1], $megaArray[4][$i][2], $megaArray[4][$i][3]]);
+    if ($preference2 != NULL) {
+        if ($nbTheme == 2 && $nbFluxToShowTotal == 8) {
+            $nbFluxUnity = 5;
         }
-    }
-    //preference 3
-    for ($i=0; $i < $nbFluxUnity; $i++) {
-        if (!empty($preference3)) {
-            if ($preference3 == 0) {
+        for ($i=0; $i < $nbFluxUnity; $i++) {
+            if ($preference2 == 0) {
                 array_push($customizedArray, [$megaArray[0][$i][0], $megaArray[0][$i][1], $megaArray[0][$i][2], $megaArray[0][$i][3]]);
-            } elseif ($preference3 == 1) {
+            } elseif ($preference2 == 1) {
                 array_push($customizedArray, [$megaArray[1][$i][0], $megaArray[1][$i][1], $megaArray[1][$i][2], $megaArray[1][$i][3]]);
-            } elseif ($preference3 == 2) {
+            } elseif ($preference2 == 2) {
                 array_push($customizedArray, [$megaArray[2][$i][0], $megaArray[2][$i][1], $megaArray[2][$i][2], $megaArray[2][$i][3]]);
-            } elseif ($preference3 == 3) {
+            } elseif ($preference2 == 3) {
                 array_push($customizedArray, [$megaArray[3][$i][0], $megaArray[3][$i][1], $megaArray[3][$i][2], $megaArray[3][$i][3]]);
-            } elseif ($preference3 == 4) {
+            } elseif ($preference2 == 4) {
                 array_push($customizedArray, [$megaArray[4][$i][0], $megaArray[4][$i][1], $megaArray[4][$i][2], $megaArray[4][$i][3]]);
             }
         }
     }
+    //preference 3
+    if ($preference3 != NULL) {
+        for ($i=0; $i < $nbFluxUnity; $i++) {        
+                if ($preference3 == 0) {
+                    array_push($customizedArray, [$megaArray[0][$i][0], $megaArray[0][$i][1], $megaArray[0][$i][2], $megaArray[0][$i][3]]);
+                } elseif ($preference3 == 1) {
+                    array_push($customizedArray, [$megaArray[1][$i][0], $megaArray[1][$i][1], $megaArray[1][$i][2], $megaArray[1][$i][3]]);
+                } elseif ($preference3 == 2) {
+                    array_push($customizedArray, [$megaArray[2][$i][0], $megaArray[2][$i][1], $megaArray[2][$i][2], $megaArray[2][$i][3]]);
+                } elseif ($preference3 == 3) {
+                    array_push($customizedArray, [$megaArray[3][$i][0], $megaArray[3][$i][1], $megaArray[3][$i][2], $megaArray[3][$i][3]]);
+                } elseif ($preference3 == 4) {
+                    array_push($customizedArray, [$megaArray[4][$i][0], $megaArray[4][$i][1], $megaArray[4][$i][2], $megaArray[4][$i][3]]);
+                }
+        }
+    }
     return $customizedArray;
 }
-
 /**
  * [Description for onlyOneFlux]
  *

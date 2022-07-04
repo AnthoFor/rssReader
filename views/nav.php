@@ -43,11 +43,11 @@
 
         </div>
         <div class="<?=$txtClass?> d-flex justify-content-around w-100 mt-3">
-            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=global">Actualités générales <img src="../public/assets/img/newspaper-svgrepo-com.svg" alt="logo journal illustrant les news général" class="iconSports ms-3"></a></p>
-            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=foot">Football <img src="../public/assets/img/football-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
-            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=tennis">Tennis <img src="../public/assets/img/big-tennis-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
-            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=rugby">Rugby <img src="../public/assets/img/rugby-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
-            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=basket">Basket <img src="../public/assets/img/basketball-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3"></a></p>
+            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=global">Actualités générales <img src="../public/assets/img/newspaper-svgrepo-com.svg" alt="logo journal illustrant les news général" class="iconSports ms-3 <?=$ballonClass?>"></a></p>
+            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=foot">Football <img src="../public/assets/img/football-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3 <?=$ballonClass?>"></a></p>
+            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=tennis">Tennis <img src="../public/assets/img/big-tennis-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3 <?=$ballonClass?>"></a></p>
+            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=rugby">Rugby <img src="../public/assets/img/rugby-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3 <?=$ballonClass?>"></a></p>
+            <p><a class="text-decoration-none <?=$txtClass?>" href="../controllers/pages-controller.php?cat=basket">Basket <img src="../public/assets/img/basketball-ball-svgrepo-com.svg" alt="logo ball de football illustrant les news de foot"  class="iconSports ms-3 <?=$ballonClass?>"></a></p>
         </div>
     </nav>
 </div>
