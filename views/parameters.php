@@ -1,6 +1,3 @@
-
-
-
     <div class="container-fluid rounded w-65">
         <div class="container d-flex justify-content-center align-items-center vh-100 vw-90">
             <form class="row justify-content-center rounded" method="POST">
@@ -35,25 +32,24 @@
                         <label class="form-check-label" for="basketBall">Basket</label>
                     </div>
                 </div>
-
                 <label class="text-center fw-bold mt-5 mb-1" for="newsDisplay">Nombre d'actualités à afficher sur la page</label>
                 <div class="col-12 d-flex justify-content-center">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="newsDisplay" id="six" value="0">
+                        <input class="form-check-input" type="radio" name="newsDisplay" id="six" value="6" <?= (!empty($newsDisplay) && ($newsDisplay == '6')) ? 'checked' : '' ?>>
                         <label class="form-check-label" for="newsDisplay">6</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="newsDisplay" id="nine" value="1">
+                        <input class="form-check-input" type="radio" name="newsDisplay" id="nine" value="9" <?= (!empty($newsDisplay) && ($newsDisplay == '9')) ? 'checked' : '' ?>>
                         <label class="form-check-label" for="newsDisplay">9</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="newsDisplay" id="twelve" value="2">
+                        <input class="form-check-input" type="radio" name="newsDisplay" id="twelve" value="12" <?= (!empty($newsDisplay) && ($newsDisplay == '12')) ? 'checked' : '' ?>>
                         <label class="form-check-label" for="newsDisplay">12</label>
                     </div>
                 </div>
                 <div class="col-12 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-dark mt-3 mb-3">Enregistrer</button>
+                    <button type="submit" id="submit" name="submit" class="btn btn-dark mt-3 mb-3">Enregistrer</button>
                 </div>
-            </form>
-        </div>
+        </form>
     </div>
+</div>

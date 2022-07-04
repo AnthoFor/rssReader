@@ -30,6 +30,6 @@
     <header>
         <!-- include de la nav bar bootstrap -->
         <?php include(__DIR__ . '/../views/nav.php'); ?>
-        <a href="https://rmcsport.bfmtv.com/jeux-olympiques/jo-paris-2024-le-calendrier-complet-des-epreuves-devoile_AV-202204010426.html"> <img class="joParis text-center" src="../public/assets/img/joParis.png" alt="banniére des jeux olympique de Paris 2022."></a>
+        <a href="https://rmcsport.bfmtv.com/jeux-olympiques/jo-paris-2024-le-calendrier-complet-des-epreuves-devoile_AV-202204010426.html"> <img class="img-fluid joParis text-center" src="../public/assets/img/joParis.png" alt="banniére des jeux olympique de Paris 2022."></a>
     </header>
 

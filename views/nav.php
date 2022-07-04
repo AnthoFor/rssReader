@@ -9,13 +9,13 @@
                 <h3 class="<?=$txtClass?> slogan">L'info Sport</h3>
                 </div>
 
-                <button class="navbar-toggler <?=$bgClass?> buttonNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon iconNav  bi bi-list text-dark"></span>
+                <button class="navbar-toggler buttonNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon iconNav <?=$btnClass?>"></span>
                 </button>
-                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item dropdown ">
-                            <ul  aria-labelledby="navbarDropdown ">
+                            <ul  class="list-unstyled" aria-labelledby="navbarDropdown ">
                                 <li><a class="dropdown-item <?=$txtClass?>" href="../controllers/pages-controller.php?cat=global">Actualités générales</a></li>
                                 <li><a class="dropdown-item <?=$txtClass?>" href="../controllers/pages-controller.php?cat=foot">Football</a></li>
                                 <li><a class="dropdown-item <?=$txtClass?>" href="../controllers/pages-controller.php?cat=tennis">Tennis</a></li>
