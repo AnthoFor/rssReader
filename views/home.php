@@ -3,7 +3,7 @@ if (!empty($_COOKIE['categories']) && empty($_GET['cat'])) {
     $intermediate = json_decode($_COOKIE['categories']);
     if (!empty($_COOKIE['newsDisplay'])) {
         $newsDisplay = $_COOKIE['newsDisplay'];
-    }
+    } else {$newsDisplay = 12;}
     if (!empty($intermediate)) {
         $howManyThemeChoosen =  count($intermediate);       
         $preference1 = $intermediate[0];
