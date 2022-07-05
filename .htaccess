@@ -22,5 +22,3 @@ RewriteRule "parametres.html" "controllers/parameters-controller.php"
 RewriteRule "monfluxRSS.html" "controllers/pages-controller.php" 
 RewriteRule "sujet1.html" "views/pages1.php" 
 RewriteRule "sujet2.html" "views/pages2.php" 
-
-ErrorDocument 404 http://myrssfeed.localhost/error404.php
