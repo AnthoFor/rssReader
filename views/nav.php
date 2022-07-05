@@ -36,8 +36,8 @@
         <div class="container-fluid justify-content-between  w-100">
             <a  href="../controllers/parameters-controller.php" class="bi bi-gear gear <?=$txtClass?> justify-content-start" ></a>
         <div>
-            <h1 class="title <?=$txtClass?> ">L'EQUIPE 22 </h1>
-            <h3 class="<?=$txtClass?> slogan">L'info Sport</h3>
+            <a  class="link" href="../controllers/pages-controller.php"><h1 class="title <?=$txtClass?>">L'EQUIPE 22 </h1></a>
+            <a  class="link" href="../controllers/pages-controller.php"><h3 class="<?=$txtClass?> slogan">L'info Sport</h3></a>
         </div>
         <a href="../controllers/pages-controller.php"><img src="../public/assets/img/lEQUIPE_22Logo.png" class="logo"  alt="logo de l'équipe 22 avec style, une chaussure multicolor"></a>
 
