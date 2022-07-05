@@ -42,6 +42,7 @@ if (!empty($_COOKIE['categories']) && empty($_GET['cat'])) {
     }
     //Si get est empty, gogo tableau par défaut ( foot + basket + tennis)
 } elseif (empty($_GET)) {
+    $newsDisplay = 12;
     if (!empty($_COOKIE['newsDisplay'])) {
         $newsDisplay = $_COOKIE['newsDisplay'];
     }   
