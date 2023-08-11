@@ -23,7 +23,7 @@ function defaultRSSArray($arrayFoot, $arrayBasket, $arrayTennis, int $nbPerTheme
  * 
  */
 
-function customizedRSSArray ($megaArray, $nbFluxToShowTotal = 12, int $nbTheme, int $preference1, $preference2 = NULL, $preference3 = NULL) {
+function customizedRSSArray ($megaArray,  int $nbTheme, int $preference1, $nbFluxToShowTotal = 12, $preference2 = NULL, $preference3 = NULL) {
     //$nbTheme = nombre de theme choisi par l'utilisateur, 2 ou 3. ( si il en selectionne 1, go go fonction onlyOneFlux)
     //si 2 themes avec 9 flux, bah ca fera 4 et 5.
     $nbFluxUnity = round($nbFluxToShowTotal / $nbTheme, 0, PHP_ROUND_HALF_UP); 
